@@ -6,9 +6,9 @@ importScripts('js/polyfill/serviceworker-cache-polyfill.js');
 
 // The files we want to cache
 var urlsToCache = [
-  '/vendor',
-  '/img',
-  '/css'
+  'vendor',
+  'img',
+  'css'
 ];
 
 // example usage:
