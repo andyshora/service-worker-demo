@@ -21,3 +21,16 @@ Responsive Images
 
 - When caching low res images, remember to set explicit width and height on img node, as the node is unaware if the request has fallen back to a cached image of a different size.
 
+Results
+---
+
+- index.html contains ~1.2MB of assets (images, js, css)
+- *Disabled test*: [load over HTTP](http://andyshora.github.io/service-worker-demo/)
+- Average page load: 1300ms. 1.2MB downloaded.
+![Service Workers Disabled](results/disabled.png "Service Workers Disabled")
+
+- *Enabled test*: [load over HTTPS](https://andyshora.github.io/service-worker-demo/)
+- Average page load: 800ms. 4KB downloaded.
+![Service Workers Enabled](results/enabled.png "Service Workers Enabled")
+
+
